@@ -29,9 +29,10 @@
 ### 6. Launch a docker container layer over the docker image of the lab
 - launch our container and mount the **learning_labs** folder as a volume to access the lab.
     ```
-    docker run -p 8888:8888 -v <full path of the folder 'learning_labs'>:/app bbitlab
+    docker run -p 8888:8888 -v C:\Users\aapea\cs_projects\bbit-learning-labs:/app bbitlab
     ```
 
+docker run -p 8888:8888 -v <full path of the folder 'learning_labs'>:/app bbitlab
 - When the container fully launches, you should have a similar output.
     You should copy the URL *(circled in red)* and paste it into your favorite web browser to launch Jupyter Lab.
 ![alt text](./data/bbit_lab.PNG)
